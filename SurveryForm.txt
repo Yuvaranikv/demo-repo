@@ -1,0 +1,65 @@
+<h1 id="Form-heading">freeCodeCamp Survey Form</h1>
+<p id="pid">Thank you for taking the time to help us improve the platform</p>
+<style>
+select:invalid { color: gray; }
+</style>
+<form id="survery-form">
+<label for="fname"> Name</label><br>
+  <input type="text" placeholder="Enter Name" id="fname" name="fname" ><br>
+  <label for="Email">Email</label><br>
+  <input type="text" id="Email" placeholder="Enter email" name="Email" ><br>
+ <label for="Age">Age(optional)</label><br>
+  <input type="text" placeholder="Age" id="Age" name="Age" ><br>
+  
+ 
+ <label for="Role">Which option best describes your current role?</label><br>
+  <select name="Role"  id="Role" required>
+     <option value="" disabled selected hidden>Select your option</option>
+    <option value="Student">Student</option>
+    <option value="Full time Job">Full time Job</option>
+    <option value="Full time Learner">Full time Learner</option>
+    <option value="Prefer not to say">Prefer not to say</option>
+  </select>
+   <p>Would you recommend freeCodeCamp to a friend?</p>
+  <input type="radio" id="Maybe" name="fav_lan" value="Maybe">
+  <label for="Maybe">Maybe</label><br>
+  <input type="radio" id="Definitely" name="fav_lan" value="Definitely">
+  <label for="Definitely">Definitely</label><br>
+  <input type="radio" id="NotSure" name="fav_lan" value="NotSure">
+  <label for="NotSure">NotSure</label><br>
+ <label for="Feature">What is your favorite feature of freeCodeCamp? </label><br><br>
+  <select name="Feature"  id="Feature" required>
+     <option value="" disabled selected hidden>Select an option</option>
+    <option value="Challenges">Challenges</option>
+    <option value="Projects">Projects</option>
+    <option value="Community">Community</option>
+    <option value="Open Source">Open Source</option>
+  </select><br>
+ <p>
+   What would you like to see improved? (Check all that apply)
+   </p><input type="checkbox" id="FrontendProjects" name="FrontendProjects" value="FrontendProjects">
+<label for="FrontendProjects"> Front-end Projects</label><br>
+<input type="checkbox" id="BackendProjects" name="BackendProjects" value="BackendProjects">
+<label for="BackendProjects"> Back-end Projects</label><br>
+<input type="checkbox" id="dataVisualization" name="dataVisualization" value="dataVisualization">
+<label for="dataVisualization">Data Visualization</label><br>
+  <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">
+  <label for="Challenges"> Challenges</label><br>
+  <input type="checkbox" id="OpenSource" name="OpenSource" value="OpenSource">
+  <label for="OpenSource">Open Source Community</label><br>
+  <input type="checkbox" id="Gitter" name="Gitter" value="Gitter">
+  <label for="Gitter"> Gitter help rooms</label><br>
+  <input type="checkbox" id="Videos" name="Videos" value="Videos">
+  <label for="Videos"> Videos</label><br>
+  <input type="checkbox" id="Meetups" name="Meetups" value="Meetups">
+  <label for="Meetups">City Meetups</label><br>
+  <input type="checkbox" id="Wiki" name="Wiki" value="Wiki">
+  <label for="Wiki"> Wiki</label><br>
+   <input type="checkbox" id="Forum" name="Forum" value="Forum">
+  <label for="Forum">Forum</label><br>
+  <input type="checkbox" id="AddCourses" name="AddCourses" value="AddCourses">
+  <label for="AddCourses"> Additional Courses</label><br><br>
+  <p>Any comments or suggestions?</p>
+  <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea><br><br>
+  <button type="submit" form="survery-form" value="Submit">Submit</button>
+  </form>
